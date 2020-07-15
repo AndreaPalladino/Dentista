@@ -162,6 +162,9 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .mastheadViste {
+      display:none;
+    }
   
   </style>
     
@@ -171,14 +174,8 @@
 
 
 
-@section('main')
+@section('content')
     
-
-@include('components._header')
-
-
-
-
 
 <div class="container-fluid py-5 my-5">
     <div class="container">

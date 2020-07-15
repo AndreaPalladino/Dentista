@@ -14,8 +14,10 @@
   </head>
   <body>
     @include('components._navbar')
+    @include('components._headerViste')
+    @include('components._header')
 
-    @yield('main')
+    @yield('content')
     
    
     @include('components._footer')

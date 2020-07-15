@@ -102,7 +102,7 @@
       background-color:rgb(41, 162, 167);
       color: black !important;
      }
-     .masthead {
+     .mastheadViste {
       height: 60vh;
       min-height: 200px;
       background: url('/media/staff.jpeg');
@@ -113,12 +113,15 @@
       clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 84%, 70% 100%, 30% 100%, 0 84%, 0 0);
       border-bottom: 4px solid rgb(41, 162, 167);
     }
+    .masthead {
+    display:none;
+  }
     </style>
     
 @endsection
-@section('main')
+@section('content')
 
-@include('components._headerViste')
+
 
 
 
@@ -165,13 +168,5 @@
   </div>
 
 
-
-
-
-
-
-
-
-  @include('components._footer')
     
 @endsection

@@ -101,7 +101,7 @@ section .section-title {
   color: black !important;
  }
 
- .masthead {
+ .mastheadViste {
   height: 90vh;
   min-height: 100px;
   background-image: url('/media/dettaglio.jpeg');
@@ -109,12 +109,15 @@ section .section-title {
   background-position-y: -200px;
   background-repeat: no-repeat;
  }
+ .masthead {
+    display:none;
+  }
 </style>
     
 @endsection
-@section('main')
+@section('content')
 
-@include('components._headerViste')
+
 
 
 <div class="container py-5 my-5">

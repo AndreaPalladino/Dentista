@@ -12,10 +12,10 @@
                 <li class="nav-item mx-5 left"><a class="nav-link text-white pt-3" href="{{route('home')}}">Home</a></li>
                 <li class="nav-item mx-5 left"><a class="nav-link text-white pt-3 " href="{{route('chi')}}">Chi Siamo</a></li>
             </ul>
-            <div class="navbar-brand navbar-brand-centered mx-auto brand brand:hover"><img src="/media/logo.png" alt="" height="60" width="60"></div>
+            <div class="navbar-brand navbar-brand-centered mx-auto brand brand:hover"><a href="{{route('home')}}"><img src="/media/logo.png" alt="" height="60" width="60"></a></div>
             <ul class="navbar-nav">
                 <li class="nav-item right mx-5"><a class="nav-link text-white pt-3 " href="{{route('servizi')}}">Servizi</a></li>
-                <li class="nav-item right mx-5"><a class="nav-link text-white pt-3 " href="{{route('contacts')}}">Contatti</a></li>
+                <li class="nav-item right mx-5"><a class="nav-link text-white pt-3 " href="{{route('contacts.create')}}">Contatti</a></li>
             </ul>
           </div>
         </div>

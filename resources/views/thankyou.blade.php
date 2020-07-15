@@ -41,10 +41,12 @@ section {
      border-bottom: 4px solid rgb(41, 162, 167));
      transition: 0.5s;
    }
-  
+   .masthead {
+    display:none;
+  }
   </style>
 @endsection
-@section('main')
+@section('content')
 
 
 <div class="container py-5 my-5">

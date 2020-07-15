@@ -123,9 +123,12 @@
   
   
   }
+  .masthead {
+    display:none;
+  }
   </style>  
 @endsection
-@section('main')
+@section('content')
 
 
 <div class="container py-5 my-5"></div>

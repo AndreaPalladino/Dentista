@@ -1,5 +1,47 @@
 @extends('layouts.app')
-@section('main')
+@section('style')
+<style>
+#navbar{
+  display:none;
+}
+  * {
+    margin:0px auto;
+    padding: 0px;
+  text-align:center;
+  }
+  
+  body {
+    background-color: #D4D9ED;
+  }
+  
+  
+  .brand {
+    background-color: transparent;
+    border: none;
+    width:400px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .brand:hover {
+    background-color:rgb(41, 162, 167);
+    color: black !important;
+   }
+  .masthead{
+    display:none;
+  }
+  .mastheadViste{
+    display:none;
+  }
+  section{
+    display:none;
+  }
+  
+  </style>
+@endsection
+@section('content')
 
 
 <div class="cont_principal">
@@ -19,35 +61,5 @@
 
 
 @push('style')
-<style>
 
-* {
-  margin:0px auto;
-  padding: 0px;
-text-align:center;
-}
-
-body {
-  background-color: #D4D9ED;
-}
-
-
-.brand {
-  background-color: transparent;
-  border: none;
-  width:400px;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.brand:hover {
-  background-color:rgb(41, 162, 167);
-  color: black !important;
- }
-
-
-
-</style>
 @endsection
