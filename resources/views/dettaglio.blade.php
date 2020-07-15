@@ -39,19 +39,7 @@
 
 @include('components._footer')
 
-@push('script')
 
-<script>
-    document.addEventListener('scroll', ()=>{
-    let navbar =document.querySelector('#navbar')
-
-    if(window.scrollY>120){
-        navbar.classList.add('bg-navbarDesktop')
-    }else{
-        navbar.classList.remove('bg-navbarDesktop')
-    }
-})
-</script>
 @push('style')
 <style>
     section {
@@ -138,11 +126,6 @@ section .section-title {
     clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
-.hrTitolo{
-  background:  black;
-  height: 2px;
-    width: 33%;
-}
 
 .brand {
   background-color: transparent;

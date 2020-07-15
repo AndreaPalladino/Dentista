@@ -59,31 +59,10 @@
 
 @push('script')
 
-<script>
-    document.addEventListener('scroll', ()=>{
-    let navbar =document.querySelector('#navbar')
 
-    if(window.scrollY>120){
-        navbar.classList.add('bg-navbarDesktop')
-    }else{
-        navbar.classList.remove('bg-navbarDesktop')
-    }
-})
-</script>
 @push('style')
 <style>
 
-hr{
-    background:  rgb(41, 162, 167);
-  height: 2px;
-    width: 33%;
-}
-
-.hrTitolo{
-  background:  black;
-  height: 2px;
-    width: 33%;
-}
 
 .bg-navbarDesktop{
    background-color: rgba(0,0,0,0.7);
@@ -91,35 +70,7 @@ hr{
    transition: 0.5s;
  }
 
-.boh{
-    clip-path: polygon(30% 0, 70% 0, 100% 7%, 100% 100%, 0 100%, 0 7%);
-    border-top: 4px solid rgb(41, 162, 167);
 
-}
-@media screen and (max-width:600px){
-    .boh{
-        clip-path: polygon(25% 0%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
-
-    border-top: 4px solid rgb(41, 162, 167);
-
-}
-}
-.iconX{
-  transform: translateX(125px);
-}
-
-@media screen and (max-width:600px){
-    .iconX{
-        transform: translateX(70px);
-        padding-bottom: 2px;
-      }
-}
-.img-round{
-    border-radius: 200px 200px 200px 200px !important;
--moz-border-radius: 200px 200px 200px 200px !important;
--webkit-border-radius: 200px 200px 200px 200px !important;
-border: 0px solid #000000;
-}
 
 section {
     padding: 60px 0;

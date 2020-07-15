@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
 use Illuminate\Http\Request;
 use App\Mail\ContactRecieved;
 use Illuminate\Support\Facades\Mail;
@@ -68,13 +69,22 @@ class FrontController extends Controller
 
    public function submit(Request $request){
        
-       $email=$request->input('email');
-       $phone=$request->input('phone');
+       $contact= new Contact();
+       
+       $contact->email=$request->input('email');
+       $contact->phone=$request->input('phone');
 
-       $contact = compact('email','phone');
+       $contact->save();
+
+       /* dd($contact); */
+
+       /* $email=$request->input('email');
+       $phone=$request->input('phone'); */
+
+       /* $contact = compact('email','phone');
 
        Mail::to($email)->send(new ContactRecieved($contact));
-    
+     */
        return redirect(route('thank-you'));
    }
 

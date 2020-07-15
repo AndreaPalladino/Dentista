@@ -121,17 +121,7 @@
 
 @push('script')
 
-<script>
-    document.addEventListener('scroll', ()=>{
-    let navbar =document.querySelector('#navbar')
 
-    if(window.scrollY>120){
-        navbar.classList.add('bg-navbarDesktop')
-    }else{
-        navbar.classList.remove('bg-navbarDesktop')
-    }
-})
-</script>
 
  @push('style')
 
@@ -142,27 +132,6 @@
    transition: 0.5s;
  }
 
-.content-section {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-}
-hr{
-  background:  black;
-  height: 2px;
-    width: 33%;
-}
-
-.map{
-    height: 50vh;
-    width:191.5vh;
-}
-
-@media screen and (max-width: 600px){
-    .map{
-    height: 50vh;
-    width:60vh;
-}
-}
 
 section {
     padding: 60px 0;
@@ -243,59 +212,7 @@ section .section-title {
     clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
 
-.cardWrap{
-    background-color: transparent;
-    transition: 0.1s;
-    width:100px;
-}
-.cardWrao:hover {
-  border:4px solid rgb(41, 162, 167);
-  color: white !important;
- }
-.col{
-    background-color: rgb(41, 162, 167);
-    clip-path: polygon(30% 0%, 49% 0, 100% 11%, 100% 88%, 49% 100%, 30% 100%, 0 100%, 0 0);
 
-}
-.col2{
-    background-color: rgb(41, 162, 167);
-    
-
-}
-.imgS {
-    vertical-align: middle;
-    border-style: none;
-}
-
-.iconX{
-  transform: translateX(125px);
-}
-@media screen and (max-width:600px){
-    .iconX{
-        transform: translateX(170px);
-        padding-bottom: 2px;
-      }
-}
-     
-     .box{
-        background-color: transparent;
-         transition: 0.1s;
-         height:280px;
-     }
-
-
-.box:hover {
-  background-color:rgb(41, 162, 167);
-  color: white !important;
-  transition: 1s;
- }
-    
-     
-   /*  .prova{
-        height:100%;
-        width:100%;
-        background-color: white;
-    } */
     html, body {
        
        

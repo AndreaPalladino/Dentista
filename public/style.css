@@ -1,0 +1,423 @@
+.hrTitolo{
+    background:  black;
+    height: 2px;
+      width: 33%;
+  }
+
+  .wrapper{
+    background-color: rgba(41, 162, 167,0.5);
+  }
+  
+  .foto{
+      position: relative;
+      
+  }
+  
+  .overlay {
+      position: absolute;
+    }
+  @media screen and (max-width:600){
+      .foto{
+      position: static;
+     
+  }
+  
+  .overlay {
+      position: static;
+      
+    }
+  }
+
+  hr{
+    background:  rgb(41, 162, 167);
+    height: 4px;
+      width: 33%;
+  }
+  @import url('https://rsms.me/inter/inter-ui.css');
+  ::selection {
+    background: #2D2F36;
+  }
+  ::-webkit-selection {
+    background: #2D2F36;
+  }
+  ::-moz-selection {
+    background: #2D2F36;
+  }
+  
+  
+  
+  .containerBox {
+    display: flex;
+    height: 320px;
+    margin: 0 auto;
+    width: 640px;
+  }
+  @media (max-width: 767px) {
+    .containerBox {
+      flex-direction: column;
+      height: 630px;
+      width: 320px;
+    }
+  }
+  .sinistra {
+    background: white;
+    height: calc(100% - 40px);
+    top: 20px;
+    position: relative;
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    .sinistra {
+      height: 100%;
+      left: 20px;
+      width: calc(100% - 40px);
+      max-height: 270px;
+    }
+  }
+  .login {
+    
+    font-weight: 900;
+    margin: 50px 40px 40px;
+  }
+  .eula {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 40px;
+  }
+  .destra {
+    background: #474A59;
+    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    color: #F1F1F2;
+    position: relative;
+    width: 50%;
+  }
+  @media (max-width: 767px) {
+    .destra {
+      flex-shrink: 0;
+      height: 100%;
+      width: 100%;
+      max-height: 350px;
+    }
+  }
+  svg {
+    position: absolute;
+    width: 320px;
+  }
+  path {
+    fill: none;
+    stroke: url(#linearGradient);;
+    stroke-width: 4;
+    stroke-dasharray: 240 1386;
+  }
+  .form {
+    margin: 40px;
+    position: absolute;
+  }
+  label {
+    color:  #c2c2c5;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  input {
+    background: transparent;
+    border: 0;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+  }
+  input::-moz-focus-inner { 
+    border: 0; 
+  }
+  #submit {
+    color: #707075;
+    margin-top: 40px;
+    transition: color 300ms;
+  }
+  
+  .boh{
+    clip-path: polygon(30% 0, 70% 0, 100% 7%, 100% 100%, 0 100%, 0 7%);
+    border-top: 4px solid rgb(41, 162, 167);
+
+}
+@media screen and (max-width:600px){
+    .boh{
+        clip-path: polygon(25% 0%, 75% 0%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+    border-top: 4px solid rgb(41, 162, 167);
+
+}
+}
+.iconX{
+  transform: translateX(125px);
+}
+
+@media screen and (max-width:600px){
+    .iconX{
+        transform: translateX(70px);
+        padding-bottom: 2px;
+      }
+}
+.img-round{
+    border-radius: 200px 200px 200px 200px !important;
+-moz-border-radius: 200px 200px 200px 200px !important;
+-webkit-border-radius: 200px 200px 200px 200px !important;
+border: 0px solid #000000;
+}
+
+.content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.map{
+    height: 50vh;
+    width:191.5vh;
+}
+
+@media screen and (max-width: 600px){
+    .map{
+    height: 50vh;
+    width:60vh;
+}
+}
+
+.cardWrap{
+    background-color: transparent;
+    transition: 0.1s;
+    width:100px;
+}
+.cardWrao:hover {
+  border:4px solid rgb(41, 162, 167);
+  color: white !important;
+ }
+.col{
+    background-color: rgb(41, 162, 167);
+    clip-path: polygon(30% 0%, 49% 0, 100% 11%, 100% 88%, 49% 100%, 30% 100%, 0 100%, 0 0);
+
+}
+.col2{
+    background-color: rgb(41, 162, 167);
+    
+
+}
+.imgS {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.iconX{
+  transform: translateX(125px);
+}
+@media screen and (max-width:600px){
+    .iconX{
+        transform: translateX(170px);
+        padding-bottom: 2px;
+      }
+}
+     
+     .box{
+        background-color: transparent;
+         transition: 0.1s;
+         height:280px;
+     }
+
+
+.box:hover {
+  background-color:rgb(41, 162, 167);
+  color: white !important;
+  transition: 1s;
+ }
+
+ .cont_principal {
+    position: absolute;  
+      width: 100%;
+      height: 100%;
+    overflow: hidden;
+    }
+    .cont_error {
+    position: absolute;
+      width: 100%;
+      height: 300px;
+      top: 50%;
+      margin-top:-150px;
+    }
+    
+    .cont_error > h1  {
+     font-family: 'Lato', sans-serif;  
+    font-weight: 400;
+      font-size:150px;
+    color:#fff;
+    position: relative;
+    left:-100%;
+    transition: all 0.5s;
+    }
+    
+    
+    .cont_error > p  {
+     font-family: 'Lato', sans-serif;  
+    font-weight: 300;
+      font-size:24px;
+      letter-spacing: 5px;
+    color:#9294AE;
+    position: relative;
+    left:100%;
+    transition: all 0.5s;
+        transition-delay: 0.5s;
+    -webkit-transition: all 0.5s;
+     -webkit-transition-delay: 0.5s;
+    }
+    
+    @media screen and (max-width:600px){
+      * {
+      margin:0px auto;
+      padding: 0px;
+    text-align:left;
+    }
+    .cont_error > p  {
+     font-family: 'Lato', sans-serif;  
+    font-weight: 200;
+      font-size:15px;
+      letter-spacing: 5px;
+    color:#9294AE;
+    position: relative;
+    left:100%;
+    transition: all 0.5s;
+        transition-delay: 0.5s;
+    -webkit-transition: all 0.5s;
+     -webkit-transition-delay: 0.5s;
+    }
+    }
+    
+    .cont_aura_1 {
+      position:absolute;
+      width:300px;
+      height: 120%;
+    top:25px;
+    right: -340px;
+      background-color: rgb(41, 162, 167);
+    box-shadow: 0px 0px  60px  20px  rgba(119, 227, 231, 0.733);
+    -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+    
+    .cont_aura_2 {
+      position:absolute;
+      width:100%;
+      height: 300px;
+    right:-10%;
+    bottom:-301px;
+     background-color: rgb(41, 162, 167);
+    box-shadow: 0px 0px 60px 10px rgba(119, 227, 231, 0.733),0px 0px  20px  0px  rgba(0,0,0,0.1);
+      z-index:5;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    }
+    
+    .cont_error_active > .cont_error > h1 {
+      left:0%;
+    }
+    .cont_error_active > .cont_error > p {
+      left:0%;
+    }
+    
+    .cont_error_active > .cont_aura_2 {
+        animation-name: animation_error_2;
+        animation-duration: 4s;
+      animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    transform: rotate(-20deg);    
+    }
+    .cont_error_active > .cont_aura_1 {
+     transform: rotate(20deg);
+      right:-170px;
+        animation-name: animation_error_1;
+        animation-duration: 4s;
+      animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @-webkit-keyframes animation_error_1 {
+      from {
+        -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+      }
+      to {  -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+      }
+    }
+    @-o-keyframes animation_error_1 {
+      from {
+        -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+      }
+      to {  -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+      }
+    
+    }
+    @-moz-keyframes animation_error_1 {
+      from {
+        -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+      }
+      to {  -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+      }
+    
+    }
+    @keyframes animation_error_1 {
+      from {
+        -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+      }
+      to {  -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+      }
+    }
+    
+    
+    
+    
+    @-webkit-keyframes animation_error_2 {
+      from { -webkit-transform: rotate(-15deg); 
+      transform: rotate(-15deg);
+      }
+      to { -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      }
+    }
+    @-o-keyframes animation_error_2 {
+      from { -webkit-transform: rotate(-15deg); 
+      transform: rotate(-15deg);
+      }
+      to { -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      }
+    }
+    
+    @-moz-keyframes animation_error_2 {
+      from { -webkit-transform: rotate(-15deg); 
+      transform: rotate(-15deg);
+      }
+      to { -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      }
+    }
+    @keyframes animation_error_2 {
+      from { -webkit-transform: rotate(-15deg); 
+      transform: rotate(-15deg);
+      }
+      to { -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+      }
+    }
+  

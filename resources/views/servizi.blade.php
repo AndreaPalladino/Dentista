@@ -66,29 +66,9 @@
 @include('components._footer')
 
 @push('script')
-
-<script>
-    document.addEventListener('scroll', ()=>{
-    let navbar =document.querySelector('#navbar')
-
-    if(window.scrollY>120){
-        navbar.classList.add('bg-navbarDesktop')
-    }else{
-        navbar.classList.remove('bg-navbarDesktop')
-    }
-})
-</script>
 @push('style')
 <style>
-.content-section {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
-}
-.col2{
-    background-color: rgba(41, 162, 167,0.5);
-    
 
-}
 
 .bg-navbarDesktop{
    background-color: rgba(0,0,0,0.7);
@@ -96,17 +76,6 @@
    transition: 0.5s;
  }
 
-hr{
-  background:  rgb(41, 162, 167);
-  height: 4px;
-    width: 33%;
-}
-
-.hrTitolo{
-  background:  black;
-  height: 2px;
-    width: 33%;
-}
 
 
 body{
@@ -115,29 +84,6 @@ body{
   
 }
 
-.wrapper{
-  background-color: rgba(41, 162, 167,0.5);
-}
-
-.foto{
-    position: relative;
-    
-}
-
-.overlay {
-    position: absolute;
-  }
-@media screen & (max-width:600){
-    .foto{
-    position: static;
-   
-}
-
-.overlay {
-    position: static;
-    
-  }
-}
 
 section {
     padding: 60px 0;
