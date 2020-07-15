@@ -154,7 +154,7 @@
           data-aos-duration="1500">
             <h5 class="card-title text-white mb-0">{{$s['name']}}</h5>
             <div class="card-text text-white-50">{{$s['prof']}}</div>
-            <hr>
+            <hr class="d-none d-md-flex">
             <p class="text-center text-white">{{$s['desc']}}</p>
           </div>
         

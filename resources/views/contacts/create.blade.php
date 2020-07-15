@@ -6,12 +6,18 @@
     height:50vh;
     width:70vh;
   }
+
+.boxinput{
+    border:1px solid rgb(41, 162, 167);
+}
+
  .box-border{
      border-top:0;
      border-left:0;
      border-right:0;
      border-radius: 0;
-     border-bottom:3px solid rgb(41, 162, 167);
+     border-bottom:3px solid rgb(41, 162, 167) !important;
+     transition: 0.5s;
  }
     section {
       padding: 60px 0;
@@ -142,16 +148,16 @@
             <form method="POST" action="{{route('contacts.store')}}" class="py-5">
                 @csrf
                 <div class="form-group mt-4">
-                  <label class="text-center text-white"for="exampleInputEmail1">Nome e Cognome</label>
-                  <input name="name" type="text" class="w-50 d-block mx-auto box-border" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label class="text-center text-white mb-2"for="exampleInputEmail1">Nome e Cognome</label>
+                  <input name="name" type="text" class="w-50 d-block mx-auto box-border" id="inputName" aria-describedby="emailHelp">
                 </div>
                 <div class="form-group mt-4">
-                  <label class="text-center text-white"for="exampleInputPassword1">Email</label>
-                  <input name="email" type="email" class="w-50 d-block mx-auto box-border" id="exampleInputPassword1">
+                  <label class="text-center text-white mb-2"for="exampleInputPassword1">Email</label>
+                  <input name="email" type="email" class="w-50 d-block mx-auto box-border" id="inputMail">
                 </div>
                 <div class="form-group mt-4">
-                    <label class="text-center text-white"for="exampleInputPassword1">Telefono</label>
-                    <input name="phone" type="phone" class="w-50 d-block mx-auto box-border" id="exampleInputPassword1" >
+                    <label class="text-center text-white mb-2"for="exampleInputPassword1">Telefono</label>
+                    <input name="phone" type="phone" class="w-50 d-block mx-auto box-border" id="inputPhone" >
                   </div>
                 <button type="submit" class="btn btn-info mt-4 d-block mx-auto">Invia</button>
               </form>
@@ -159,7 +165,6 @@
         </div>
     </div>
 </div>
-
 
 
 

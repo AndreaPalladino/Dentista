@@ -7,7 +7,7 @@
                     <li><a href="{{route('home')}}"><i class="fa fa-angle-double-right"></i>Home</a></li>
                     <li><a href="{{route('chi')}}"><i class="fa fa-angle-double-right"></i>Chi Siamo</a></li>
                     <li><a href="{{route('servizi')}}"><i class="fa fa-angle-double-right"></i>Servizi</a></li>
-                    <li><a href="{{route('contacts')}}"><i class="fa fa-angle-double-right"></i>Contatti</a></li>   
+                    <li><a href="{{route('contacts.create')}}"><i class="fa fa-angle-double-right"></i>Contatti</a></li>   
                 </ul>
             </div>
             
