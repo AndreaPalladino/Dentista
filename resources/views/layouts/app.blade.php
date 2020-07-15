@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    @yield('style')
     <title>@yield('title')</title>
   </head>
   <body>
-   
+    @include('components._navbar')
 
     @yield('main')
     
    
-    @stack('style')
+    @include('components._footer')
+    
+
     @stack('script')
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,46 +1,5 @@
 @extends('layouts.app')
-@section('main')
-@include('components._navbar')
-@include('components._headerViste')
-
-
-<div class="container py-5 my-5">
-    <div class="row align-items-center">
-        <div class="col-12">
-            <h1 class="text-center">I NOSTRI <span class="h1 font-weight-bold display-4"> SERVIZI</span></h1>
-            <hr>
-        </div>
-    </div>
-</div>
-
-<div class="container py-5 my-5">
-   <div class="row">
-       <div class="col-12 col-md-6">
-           <img src="{{$selectedName['img']}}" alt="" class="img-fluid mb-5">
-       </div>
-       <div class="col-12 col-md-6">
-           <h3 class="text-center mt-5">{{$selectedName['name']}}</h3>
-       </div>
-   </div>
-   <div class="row">
-       <div class="col-12">
-           <p class="my-5">{{$selectedName['dett']}}</p>
-           <p class="my-5">{{$selectedName['dett']}}</p>
-           <p class="my-5">{{$selectedName['dett']}}</p>
-       </div>
-   </div>
-</div>
-
-
-
-
-
-
-
-@include('components._footer')
-
-
-@push('style')
+@section('style')
 <style>
     section {
     padding: 60px 0;
@@ -151,5 +110,46 @@ section .section-title {
   background-repeat: no-repeat;
  }
 </style>
+    
+@endsection
+@section('main')
+
+@include('components._headerViste')
+
+
+<div class="container py-5 my-5">
+    <div class="row align-items-center">
+        <div class="col-12">
+            <h1 class="text-center">I NOSTRI <span class="h1 font-weight-bold display-4"> SERVIZI</span></h1>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5 my-5">
+   <div class="row">
+       <div class="col-12 col-md-6">
+           <img src="{{$selectedName['img']}}" alt="" class="img-fluid mb-5">
+       </div>
+       <div class="col-12 col-md-6">
+           <h3 class="text-center mt-5">{{$selectedName['name']}}</h3>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col-12">
+           <p class="my-5">{{$selectedName['dett']}}</p>
+           <p class="my-5">{{$selectedName['dett']}}</p>
+           <p class="my-5">{{$selectedName['dett']}}</p>
+       </div>
+   </div>
+</div>
+
+
+
+
+
+
+
+
     
 @endsection
