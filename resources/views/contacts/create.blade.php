@@ -119,6 +119,7 @@
    body{
        background-image: url('/media/contatti.jpeg');
        background-position: 0px -500px;
+       background-size: cover;
    }
    .masthead{
      display:none;
@@ -142,7 +143,17 @@
 </div>
 
 <div class="container  mt-3 py-5">
-    <div class="row">
+    
+      <div class="row">
+        <div class="col-12">
+            @if(session('message'))
+            <div class="alert alert-info text-center text-white">
+                {{session('message')}}
+            </div>
+            @endif
+        </div>
+      </div>
+      <div class="row my-5">
         <div class="col-12">
             <div class="wrapper mx-auto mb-5">
             <form method="POST" action="{{route('contacts.store')}}" class="py-5">

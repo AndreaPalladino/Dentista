@@ -34,13 +34,13 @@ Route::get('Contatti/create', 'ContactController@create')->name('contacts.create
 
 Route::post('Contatti/store', 'ContactController@store')->name('contacts.store');
 
-Route::get('Contatti/show', 'ContactController@show')->name('contacts.show');
+Route::get('Contatti/show/{contact}', 'ContactController@show')->name('contacts.show');
 
-Route::get('Contatti/edit', 'ContactController@edit')->name('contacts.edit');
+Route::get('Contatti/edit/{contact}', 'ContactController@edit')->name('contacts.edit');
 
-Route::post('Contatti/update', 'ContactController@update')->name('contacts.update');
+Route::put('Contatti/update/{contact}', 'ContactController@update')->name('contacts.update');
 
-Route::post('Contatti/delete', 'ContactController@destroy')->name('contacts.destroy');
+Route::delete('Contatti/delete/{contact}', 'ContactController@destroy')->name('contacts.destroy');
 
 
 

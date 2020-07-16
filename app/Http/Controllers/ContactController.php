@@ -7,33 +7,87 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function index(){
-      //
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $contacts=Contact::all();
+        return view('contacts.index', compact('contacts'));
     }
-    public function create(){
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
         return view('contacts.create');
     }
-    public function store(Request $request){
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
         $contact= new Contact();
         
-        $contact->name=$request->input('name');
-        $contact->email=$request->input('email');
-        $contact->phone=$request->input('phone');
-
-        $contact->save();
-        return redirect(route('thank-you'));
-    }
-    public function show(){
-
-    }
-    public function edit(){
-
-    }
-    public function update(){
-
-    }
-    public function destroy(){
-
+       $contact=Contact::create($request->all());
+        return redirect()->back()->with('message', 'COMPLIMENTI, hai aggiunto un nuovo contatto.');
     }
 
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Contact  $contact
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Contact $contact)
+    {
+        return view('contacts.show', compact('contact'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Contact  $contact
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Contact $contact)
+    {
+        return view('contacts.edit', compact('contact'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Contact  $contact
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Contact $contact)
+    {
+        $contact->update($request->all());
+
+        return redirect()->back()->with('message', 'DATI MODIFICATI CORRETTAMENTE!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Contact  $contact
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Contact $contact)
+    {
+        
+        $contact->delete();
+        return redirect()->back()->with('message', 'Contatto Cancellato!');
+    }
 }
