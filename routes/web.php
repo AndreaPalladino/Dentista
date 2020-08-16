@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'FrontController@home')->name('home');
+Route::get('/', 'FrontController@home')->name('homepage');
 
 Route::get('/ChiSiamo', 'FrontController@chisiamo')->name('chi');
 
@@ -44,3 +44,7 @@ Route::delete('Contatti/delete/{contact}', 'ContactController@destroy')->name('c
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

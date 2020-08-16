@@ -4,7 +4,7 @@
             <div class="col-xs-12 col-sm-4 col-md-4 offset-md-2">
                 <h5>Navigazione</h5>
                 <ul class="list-unstyled quick-links">
-                    <li><a href="{{route('home')}}"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="{{route('homepage')}}"><i class="fa fa-angle-double-right"></i>Home</a></li>
                     <li><a href="{{route('chi')}}"><i class="fa fa-angle-double-right"></i>Chi Siamo</a></li>
                     <li><a href="{{route('servizi')}}"><i class="fa fa-angle-double-right"></i>Servizi</a></li>
                     <li><a href="{{route('contacts.create')}}"><i class="fa fa-angle-double-right"></i>Contatti</a></li>   
